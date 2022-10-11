@@ -13,6 +13,10 @@ function App() {
       element: <Main></Main>,
       children: [
         {
+          path: '/',
+         element: <Topic></Topic>
+        },
+        {
          path: 'container',
 
          element: <Container></Container> 

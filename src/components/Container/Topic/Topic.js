@@ -8,6 +8,8 @@ const Topic = () => {
     console.log(topic)
     return (
         <div>
+
+            <h1>This topic page</h1>
             {
         
             }
