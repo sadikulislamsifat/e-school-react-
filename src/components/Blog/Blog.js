@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='md:p-8 flex justify-center'>
+        <div className='md:p-8 flex justify-center mt-7'>
             <div className='w-11/12 md:w-8/12 h-54'>
             <div tabIndex={0} className="mt-2 collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
   <div className="collapse-title text-xl font-medium">
