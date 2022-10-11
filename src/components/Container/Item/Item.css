@@ -1,0 +1,17 @@
+.button{
+    background:  #570DF8;
+    color: white;
+    width: 120px;
+    height: 42px;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.button:hover{
+    background: #4506CB;
+    
+}
+.button:focus{
+    width: 100px;
+    height: 40px;
+}
