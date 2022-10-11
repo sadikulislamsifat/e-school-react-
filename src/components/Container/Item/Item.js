@@ -5,7 +5,7 @@ import './Item.css'
 
 const Item = ({topic}) => {
     const {id, name, logo, total} = topic;
-    console.log(topic)
+    // console.log(topic)
     return (
         <div>
            <div className="card card-compact w-full  h-full  shadow-xl">
