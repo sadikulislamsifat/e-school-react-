@@ -12,20 +12,16 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
-        {
-          path: '/',
-         element: <Topic></Topic>
-        },
-        {
-         path: 'container',
-         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
-         element: <Container></Container> 
-        },
-        
+       
         {
          path: 'topic',
-         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),         
-         element: <Topic></Topic>
+         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+         element: <Topic></Topic> 
+        },    
+        {
+         path: 'container/:id',
+         loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),         
+         element: <Container></Container>
         },
         {
          path: 'blog',

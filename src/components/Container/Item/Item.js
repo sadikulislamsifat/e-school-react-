@@ -1,6 +1,7 @@
 import { faArrowRight, faRightLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Item.css'
 
 const Item = ({topic}) => {
@@ -15,10 +16,11 @@ const Item = ({topic}) => {
              <h2 className="card-title">{name}</h2>
                <div className="card-actions justify-end">
 
-                 <button className="btn btn-primary">Start Practice 
+                <Link to={`/container/${id}`}> 
+                <button className="btn btn-primary">Start Practice
                  <span className='ml-2'>
                  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-                 </span> </button>
+                 </span> </button></Link>
                </div>
              </div>
            </div>

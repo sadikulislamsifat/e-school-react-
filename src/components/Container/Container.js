@@ -4,15 +4,24 @@ import History from './History/History';
 
 const Container = () => {
     const topic = useLoaderData();
-    const {data} = topic;
+    console.log(topic)
+    const {questions} = topic.data;
+    console.log(questions)
     return (
         <div>
+
+
+
+
+
+
+
             <div>
                 {
-                    data.map(data => <History 
+                    questions.map(data => <History 
                     data={data}
                     key={data.id}
-                    ></History>)
+                    ></History>) 
                 }
             </div>
         </div>

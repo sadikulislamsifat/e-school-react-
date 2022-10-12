@@ -5,15 +5,11 @@ import Item from '../Item/Item';
 const Topic = () => {
 
     const topic = useLoaderData();
-    const {data} = topic;
     console.log(topic)
+    const {data} = topic;
+    
 
-    // const  [topic , setTopic] = useState([]);
-    // useEffect(() => {
-    //     fetch('https://openapi.programming-hero.com/api/quiz/1')
-    //     .then(res => res.json())
-    //     .then(data => setTopic(data))
-    // },[])
+    
 
     return (
         <div className='mt-20 flex justify-center align-center'>
