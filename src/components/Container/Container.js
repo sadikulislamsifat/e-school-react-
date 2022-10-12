@@ -20,8 +20,9 @@ const Container = () => {
 
             <div>
                 {
-                    questions.map(data => <History 
+                    questions.map((data, i) => <History 
                     data={data}
+                    I={i + 1}
                     key={data.id}
                     ></History>) 
                 }

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Item from '../Item/Item';
 import './Topic.css'
@@ -6,12 +5,8 @@ import './Topic.css'
 const Topic = () => {
 
     const topic = useLoaderData();
-    // console.log(topic)
+    console.log(topic)
     const {data} = topic;
-    
-
-    
-
     return (
         <div className=' topic-container flex justify-center align-center'>
 
