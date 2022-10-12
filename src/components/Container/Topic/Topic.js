@@ -13,7 +13,7 @@ const Topic = () => {
     
 
     return (
-        <div className='mt-20 topic-container flex justify-center align-center'>
+        <div className=' topic-container flex justify-center align-center'>
 
             <div className='grid gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-5 md:px-8 lg:px-12'>
             {

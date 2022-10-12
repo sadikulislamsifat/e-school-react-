@@ -1,4 +1,5 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
+import { success } from "daisyui/src/colors";
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -8,11 +9,13 @@ const History = ({ data, I }) => {
 	const [ans, setAns] = useState(false);
 
 	const answer = correctAnswer.replaceAll(" ", "");
-
+	console.log(answer)
 	const quizAnswer = innerText => {
 		const text = innerText.replaceAll(" ", "");
-		console.log(text)
+		// console.log(text)
 		if (answer === text) {
+			// console.log(text)
+			// toast.success("success")
 			toast.success("success", { autoClose: 500 });
 		} else {
 			toast.warning("sorry", { autoClose: 500 });

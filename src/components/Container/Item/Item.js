@@ -9,7 +9,7 @@ const Item = ({topic}) => {
     // console.log(topic)
     return (
         <div>
-           <div className="card card-compact w-full  h-full  shadow-xl">
+           <div className="card card-compact w-full  shadow-xl">
              <figure className='bg-blue-100'><img src={logo} alt="Shoes" /></figure>
              <div className=" flex justify-between px-4 md:px-1 lg:px-3 py-3">
                
