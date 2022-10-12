@@ -5,7 +5,7 @@ import './Blog.css'
 
 const Blog = () => {
     return (
-        <div className='px-9 '>
+        <div className='px-9 blog-container'>
       <div className='text-start flex justify-between mt-5'>
         <div className=''>
         <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
@@ -13,7 +13,7 @@ const Blog = () => {
       <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
         </div>
         <div className='ml-5'>
-        <h1 className='text-3xl font-bold text-blue-500'>Sadikul Islam</h1>
+        <h1 className='text-2xl md:text-3xl font-bold text-blue-500'>Sadikul Islam</h1>
         <p>Web Developer</p>
         </div>
         <div className='logo'>
@@ -25,11 +25,11 @@ const Blog = () => {
             <h2 className='text-2xl font-bold '>What is the purpose of React Router?</h2>
             <p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL</p>
           </div>
-          <div className='bg-sky-400 p-4 mt-5 shadow-blue-200 shadow-xl rounded-lg text-white'>
+          <div className='bg-sky-400 p-4 mt-5 shadow-sky-200 shadow-xl rounded-lg text-white'>
             <h2 className='text-2xl font-bold '>How does context api works ?</h2>
             <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.</p>
           </div>
-          <div className='bg-purple-400 p-4 mt-5 shadow-blue-200 shadow-xl rounded-lg text-white'>
+          <div className='bg-purple-400 p-4 mt-5 shadow-purple-200 shadow-xl rounded-lg text-white'>
             <h2 className='text-2xl font-bold '> What is useRef in React hooks?</h2>
             <p>The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. Syntax: const refContainer = useRef(initialValue); The useRef returns a mutable ref object. This object has a property called.</p>
           </div>

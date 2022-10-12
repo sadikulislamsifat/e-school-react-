@@ -1,6 +1,6 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const History = ({ data, I }) => {
 	const { correctAnswer, options, question } = data;
@@ -11,6 +11,7 @@ const History = ({ data, I }) => {
 
 	const quizAnswer = innerText => {
 		const text = innerText.replaceAll(" ", "");
+		console.log(text)
 		if (answer === text) {
 			toast.success("success", { autoClose: 500 });
 		} else {
@@ -70,6 +71,7 @@ const History = ({ data, I }) => {
 					</div>
 				</div>
 			</div>
+			{/* <ToastContainer/> */}
 		</div>
 	);
 };

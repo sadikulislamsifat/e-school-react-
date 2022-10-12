@@ -1,5 +1,11 @@
-.footer{
-    color: #FFF;
-    position: absolute;
-    bottom: 0;
+
+
+@media  screen and (min-width: 800px) {
+    .footer{
+        color: #FFF;
+        /* position: absolute; */
+        margin-bottom: 0;
+        /* height: 12vh; */
+    }
+    
 }
