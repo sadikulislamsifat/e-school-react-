@@ -1,7 +1,10 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
-import { success } from "daisyui/src/colors";
+
 import React, { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+// import { Toast } from "react-toastify/dist/components";
+import 'react-toastify/dist/ReactToastify.css';
 
 const History = ({ data, I }) => {
 	const { correctAnswer, options, question } = data;
@@ -16,9 +19,10 @@ const History = ({ data, I }) => {
 		if (answer === text) {
 			// console.log(text)
 			// toast.success("success")
-			toast.success("success", { autoClose: 500 });
+			// Toast.warning("hi", {autoClose: 5000})
+			toast.success("success", { autoClose: 1000 });
 		} else {
-			toast.warning("sorry", { autoClose: 500 });
+			toast.warning("sorry", { autoClose: 1000 });
 		}
 	};
 	const correctAnswerWithEye = id => {
