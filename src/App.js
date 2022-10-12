@@ -5,6 +5,7 @@ import Container from './components/Container/Container';
 import Topic from './components/Container/Topic/Topic';
 import Blog from "./components/Blog/Blog";
 import Statistic from './components/Statistic/Statistic';
+import Home from './components/Home/Home';
 
 
 function App() {
@@ -13,6 +14,11 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
+        {
+          path: 'home',
+          element: <Home></Home>
+        },
+        
         {
           path: '/',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),

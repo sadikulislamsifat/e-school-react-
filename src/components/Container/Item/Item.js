@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './Item.css'
 
 const Item = ({topic}) => {
-    const {id, name, logo, total} = topic;
+    const {id, name, logo, } = topic;
     // console.log(topic)
     return (
         <div>

@@ -13,6 +13,9 @@ const Navbar = () => {
   <div className="flex-none">
     <ul className="menu menu-horizontal font-bold p-0">
       <li>
+      <Link to="/home">Home</Link>
+      </li>
+      <li>
       <Link to="/topic">Topic</Link>
       </li>
       <li tabIndex={0}>
